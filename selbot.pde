@@ -30,12 +30,7 @@ void folderSelected(File inputFolder) {
     println("User selected " + inputFolder.getAbsolutePath());
   
     titles = loadStrings(folderPath + "/titles.txt");
-    
-
     bgImg = loadImage(folderPath + "/design/background.png");
-
-    println("STILL GOOD");
-
     devicesDir= new File(folderPath + "/devices");
     devices = devicesDir.listFiles();
     
