@@ -91,6 +91,7 @@ void folderSelected(File inputFolder) {
           pg.save(folderPath + "/output/" + deviceName + "/" + "(" + ti + ") " + titles[ti] + ".png");
         }
         println("Done");
+        launch(folderPath + "/output");
       }
     }
     exit();
