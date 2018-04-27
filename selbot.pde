@@ -83,7 +83,8 @@ void folderSelected(File inputFolder) {
           // Draw Title
           pg.textFont(f,deviceConfig.getInt("textSize"));
           pg.textAlign(CENTER);
-          pg.text(titles[ti], pg.width/2 - deviceConfig.getInt("frameWidth")/2, deviceConfig.getInt("textY"), deviceConfig.getInt("textWidth"), 300);
+          pg.fill(242, 45, 69);
+          pg.text(titles[ti], pg.width/2 - deviceConfig.getInt("textWidth")/2, deviceConfig.getInt("textY"), deviceConfig.getInt("textWidth"), 300);
           // Draw device frame
           pg.image(fgImg, pg.width/2 + deviceConfig.getInt("frameX"), pg.height/2 + deviceConfig.getInt("frameY"));
           pg.imageMode(CORNER);
